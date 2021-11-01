@@ -25,7 +25,7 @@ def sum_two_numbers(a,b):
     return a+b
 
 # Output: 10
-print(sum(1,4))
+print(sum_two_numbers(1,4))
 
 ### IF/ELSE STATEMENTS ---------------------------------------------------------------------------------------------------
 # Defintion: The if statement executes a statement if a specified condition is true. If the condition is false, another 
@@ -45,18 +45,61 @@ else:
 
 ### DATA STRUCTURES ------------------------------------------------------------------------------------------------------
 # Tuples: A tuple is used to store multiple items in a single variable. It's also a collection which is ordered and 
-# unchangeable.
+# unchangeable. (Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been 
+# created.)
 
+tuple1 = ("apple", "banana", "cherry")
+tuple2 = (1, 5, 7, 9, 3)
+tuple3 = (True, False, False)
+tuple4 = ("abc", 34, True, 40, "male")
 
+# Lists: A list used to store multiple items in a single variable. List items are ordered, changeable, and allow 
+# duplicate values.
 
-# Lists: 
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+list4 = ["abc", 34, True, 40, "cherry"]
+
+# list indexing
+print(list1[0])
+print(list2[3])
+
+# list slicing
+# start is the index of the first element to include, and stop is the index of the item to stop at without including 
+# it in the slice
+list4[0:3]
 
 ### LOOPS ---------------------------------------------------------------------------------------------------------------- 
-# for loop/nested loop
-# while loop
+# for loop: used to repeat a specific block of code a known number of times.
+for i in range(0,5):
+    print('happy halloween!')
+
+for i in list4:
+    print(i)
+
+# nested loop: one loop inside of another
+for i in list4:
+    for x in list1: 
+        if i == x:
+            print(i)
+
+# while loop: used to execute a set of statements as long as a condition is true
+i = 1
+while i < 6: 
+    print(i)
+    i += 1 # have to change i, otherwise the loop will continue forever
 
 ### TRY/EXCEPT STATEMENTS ------------------------------------------------------------------------------------------------
-# try/except
+# Defintion: The try-except block can handle exceptions. This prevents abrupt exits of the program on error. In the 
+# example below we purposely raise an exception.
+
+try: 
+    1 / 0
+except ZeroDivisionError: 
+    print('Divided by zero')
+
+print('Should reach here')
 
 
 ### CLASSES ------------------------------------------------------------------------------------------------------------
@@ -81,8 +124,3 @@ print(Person.greet)
 
 # Output: "This is a person class"
 print(Person.__doc__)
-
-
-
-
-
