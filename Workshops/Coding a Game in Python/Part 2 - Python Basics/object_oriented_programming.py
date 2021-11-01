@@ -1,6 +1,5 @@
 import pygame # Open-source cross-platform library for the development of multimedia applications like video games using python
 import random # Implements pseudo-random number generators for various distributions
-import numpy as np
 
 ### GLOBAL VARIABLES ---------------------------------------------------------------------------------------------------
 # Definition: Global variables, as the name implies, are variables that are accessible globally, or everywhere 
@@ -106,11 +105,14 @@ print('Should reach here')
 # Definition: Used to create objects (object has state (data) and behavior (code)) and define a type
 # More information here: https://realpython.com/lessons/classes-python/
 
-# (__init__)
-
 class Person:
     "This is a person class"
-    age = 20
+
+    age = 21
+
+    def __init__(self, name):
+        "used to initialize all the variables"
+        self.name = name
 
     def greet(self):
         "This function will return a greeting"
@@ -122,5 +124,28 @@ print(Person.age)
 # Output: <function Person.greet>
 print(Person.greet)
 
+# Output: error bc an object has not been instantiated (Python classes need to be instantiated, or 
+# called, before you can access their methods.)
+print(Person.greet()) 
+
 # Output: "This is a person class"
 print(Person.__doc__)
+
+# create a person with name "siddhi"
+person1 = Person("siddhi")
+
+# Output: "siddhi"
+print(person1.name)
+
+# Output: 21
+print(person1.age)
+person1.age = 20
+# Output: 20
+print(person1.age)
+
+person2 = Person("aditi")
+# Output: 21
+print(person2.age)
+
+# Output: Hello
+person1.greet()
