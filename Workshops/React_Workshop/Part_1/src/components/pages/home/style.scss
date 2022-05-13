@@ -1,0 +1,46 @@
+@import '../../../foundation';
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: $grid-gap;
+}
+
+.App-logo {
+    width: 100%;
+    height: 65vh;
+    max-height: 600px;
+    position: relative;
+  }
+
+.App-overlay-title {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.App-container{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.section-container {
+    padding-top: 65px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.intro-text{
+  font-weight: $subheader-weight;
+  margin: 20px;
+  color: black;
+}
+
+.link-text{
+  font-weight: $subheader-weight;
+  margin: 20px;
+  color: black;
+}

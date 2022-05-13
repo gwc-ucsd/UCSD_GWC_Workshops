@@ -1,0 +1,37 @@
+@import './foundation';
+@import "~bootstrap/scss/bootstrap"; // React Bootstrap
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  background-color: $primary-background-color;
+}
+
+h1, p, div {
+  color: $text-color-dark;
+  font-family: $primary-font;
+}
+
+h1 {
+  margin: 0;
+  padding: $header-spacing 0;
+  font-weight: 700;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.content-wrap {
+  padding-bottom: 13rem; // footer height
+}

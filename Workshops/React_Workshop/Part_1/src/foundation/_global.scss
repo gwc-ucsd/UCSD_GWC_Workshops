@@ -1,0 +1,17 @@
+// _global.scss
+// Global Variables file
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+// Borders
+$border-rounded: 20px;
+
+// Fonts
+$primary-font: 'Montserrat', sans-serif;
+$header-weight: 700;
+$subheader-weight: 400;
+$text-weight: 100;
+
+// Spacing
+$grid-gap: 2rem;
+$header-spacing: 1rem;

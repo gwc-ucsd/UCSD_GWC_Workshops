@@ -1,0 +1,43 @@
+@import "foundation";
+
+.deck-box {
+  align-items: center;
+  display: inline-block;
+}
+
+.pic-box {
+  border: 6px solid $title-color;
+  border-radius: 80px;
+  margin-top: 30px;
+}
+
+.card-box {
+  border: 6px solid white;
+  max-width: 25vw;
+  border-radius: 80px;
+  margin-top: 30px;
+}
+
+.card-picture {
+  border-radius: 73px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.card-description {
+  margin: -15px;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+}
